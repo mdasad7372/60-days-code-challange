@@ -1,0 +1,29 @@
+
+import java.io.*;
+class Pyramid {
+	public static void main(String[] args)
+	{
+		int number = 7;
+
+		int i = number, j;
+		while (i > 0) {
+			j = 0;
+
+			// Condition check
+			while (j++ < number - i) {
+				// Print whitespaces
+				System.out.print(" ");
+			}
+
+			j = 0;
+			// Condition check
+			while (j++ < (i * 2) - 1) {
+				// Print star
+				System.out.print("*");
+			}
+			System.out.println();
+			// reverse of pyramid
+			i--;
+		}
+	}
+}
