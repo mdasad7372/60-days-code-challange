@@ -1,0 +1,20 @@
+class Evenlenthstring {
+public static void printWords(String s)
+{
+
+// Splits Str into all possible tokens
+for (String word : s.split(" "))
+
+// if length is even
+if (word.length() % 2 == 0)
+
+	System.out.println(word);
+}
+
+public static void main(String[] args)
+{
+
+String s = "i am Geeks for Geeks and a Geek";
+printWords(s);
+}
+}
