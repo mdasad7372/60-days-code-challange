@@ -1,0 +1,23 @@
+import java.io.File;
+
+class Main {
+  public static void main(String[] args) {
+
+    // create a file object for the current location
+    File file = new File("JavaFile.java");
+
+    try {
+    
+      boolean value = file.createNewFile();
+      if (value) {
+        System.out.println("New Java File is created.");
+      }
+      else {
+        System.out.println("The file already exists.");
+      }
+    }
+    catch(Exception e) {
+      e.getStackTrace();
+    }
+  }
+}
