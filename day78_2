@@ -1,0 +1,20 @@
+class Test {
+
+  // create private constructor
+  private Test () {
+    System.out.println("This is a private constructor.");
+  }
+  public static void instanceMethod() {
+
+    // create an instance of Test class
+    Test obj = new Test();
+  }
+
+}
+
+class Main {
+
+  public static void main(String[] args) {
+    Test.instanceMethod();
+  }
+}
